@@ -19,7 +19,8 @@ image:
 ---
 
 ## Git
-
+* git init 当前目录下初始化git
+* git remote add origin git@github.com:username/repository_name 和远程仓库建立连接
 * git reflog : 显示本地分支提交历史
 * git branch -D develop : 删除develop分支
 * git reset 612d24 : 还原到612d24提交状态
@@ -30,6 +31,7 @@ image:
 * git pull origin test : 拉取远程test分支的代码更新到本地
 * git add . :把当前目录下的文件添加到git仓库中
 * git commit -m "nothing" :提交本次修改的内容
+* git checkout -b develop origin/develop 拉取远程分支到本地
 
 ---
 
@@ -57,7 +59,8 @@ image:
 * :h vim帮助
 * ZZ 保存退出
 * ZQ 不保存退出
-
+* 空格 搜索
+* 搜索选中之后 n 下一个 N 上一个
 ### 操作
 * d 删除单个字母
 * D 删除至行尾
@@ -127,6 +130,8 @@ image:
 
 ## 常用Linux命令
 
+* ln -s <文件原始路径> <目标路径> 创建软链接
+* find . -name "*.txt" 匹配所有以.txt结尾的文件
 * ifconfig 查看ip地址
 * pwd 显示目录路径
 * ls 显示当前目录下的所有文件

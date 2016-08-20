@@ -4,9 +4,9 @@
     {% comment %} Link for previous page {% endcomment %}
     {% if paginator.previous_page %}
       {% if paginator.previous_page == 1 %}
-        <li><a href="{{ site.url }}" class="btn">Previous</a></li>
+        <li><a href="{{ site.url }}" class="btn">前一页</a></li>
       {% else %}
-        <li><a href="{{ site.url }}/page{{ paginator.previous_page }}/" class="btn">Previous</a></li>
+        <li><a href="{{ site.url }}/page{{ paginator.previous_page }}/" class="btn">前一页</a></li>
       {% endif %}
     {% endif %}
 
@@ -59,7 +59,7 @@
       Link next page
     {% endcomment %}
     {% if paginator.next_page %}
-      <li><a href="{{ site.url }}/page{{ paginator.next_page }}/" class="btn">Next</a></li>
+      <li><a href="{{ site.url }}/page{{ paginator.next_page }}/" class="btn">后一页</a></li>
     {% endif %}
   </ul>
 </div>
